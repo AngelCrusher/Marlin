@@ -45,7 +45,7 @@
 //
 #define X_STOP_PIN         22
 #define Y_STOP_PIN         26
-#define Z_STOP_PIN         29
+#define Z_STOP_PIN         69 // nh blt 29
 
 //
 // Steppers
@@ -77,7 +77,7 @@
 #ifndef MOTOR_CURRENT_PWM_RANGE
   #define MOTOR_CURRENT_PWM_RANGE 2000
 #endif
-#define DEFAULT_PWM_MOTOR_CURRENT  {1300, 1300, 1250}
+#define DEFAULT_PWM_MOTOR_CURRENT  {1000, 1300, 700} // nh
 
 //
 // Temperature Sensors
@@ -105,7 +105,7 @@
 #define LED_PIN             8
 #define SAFETY_TRIGGERED_PIN     28   // PIN to detect the safety circuit has triggered
 #define MAIN_VOLTAGE_MEASURE_PIN 14   // ANALOG PIN to measure the main voltage, with a 100k - 4k7 resitor divider.
-
+#define SERVO0_PIN         29 // nh BLTouch
 //
 // LCD / Controller
 //
